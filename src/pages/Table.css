@@ -1,0 +1,220 @@
+/* Table.css */
+
+/* Container for the table header (title and search) */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Table title styling */
+.table-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #363636;
+  margin: 0;
+}
+
+/* Search bar styling */
+.search-container {
+  text-align: right;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 250px;
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1082d7;
+}
+
+/* Table container */
+.table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px; /* Set a minimum height for the table container */
+  position: relative; /* allow sticky pagination */
+  padding-bottom: 16px; /* keep content clear of sticky footer */
+}
+
+/* Table wrapper for consistent height */
+.table-wrapper {
+  flex: 1;
+  min-height: 400px; /* Adjust based on your needs */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Table row styling */
+.rdt_Table {
+  flex: 1;
+  min-height: 400px; /* keep body tall so footer stays in place */
+  display: flex;
+  flex-direction: column;
+}
+
+.rdt_TableBody {
+  flex: 1;
+}
+
+.rdt_TableRow {
+  min-height: 60px;
+  height: auto; /* allow rows to expand for wrapped text */
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.rdt_TableCell {
+  padding: 12px 15px;
+  display: flex;
+  align-items: flex-start;
+  min-height: 60px; /* Match row height */
+  overflow: visible;
+  text-overflow: initial;
+  white-space: normal; /* enable wrapping */
+}
+
+.rdt_TableHead .rdt_TableCol {
+  font-weight: 600;
+  color: #4a5568;
+  background-color: #f7fafc;
+  height: 50px; /* Header row height */
+  display: flex;
+  align-items: center;
+}
+
+/* Pagination styling */
+.rdt_Pagination {
+  border-top: 1px solid #e2e8f0;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* keep controls on one line */
+  gap: 16px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* keep above table content */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05); /* subtle separation */
+}
+
+/* Link styling inside the table */
+.link {
+  text-decoration: none;
+  color: #1082d7;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: rgb(11, 76, 145);
+}
+
+/* Panel name text wrap */
+.panel-name {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  width: 100%;
+  word-break: break-word;
+}
+
+/* Empty state styling */
+.rdt_Table .rdt_TableRow:only-child .rdt_TableCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust based on your needs */
+  color: #718096;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .search-input {
+    width: 200px;
+  }
+
+  .rdt_TableHead .rdt_TableCol,
+  .rdt_TableCell {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .rdt_Pagination {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .rdt_TableRow,
+  .rdt_TableCell {
+    height: auto;
+    min-height: 50px;
+  }
+}
+
+.myModal h5 {
+  font-size: 30px;
+  color: #1a83c6;
+  font-weight: 600;
+}
+
+.modalTender {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-dialog {
+  max-width: 70%;
+  max-height: 70%;
+  margin: auto;
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.supplier-container .cyOdnA {
+  white-space: normal !important;
+}
+
+/* Ensure consistent cell content */
+.rdt_TableCell > div {
+  width: 100%;
+  overflow: visible;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+/* Loading state */
+.rdt_Table .rdt_TableRow.rdt_TableLoading {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
