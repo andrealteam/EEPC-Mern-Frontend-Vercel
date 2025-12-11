@@ -174,8 +174,8 @@ export const AuthProvider = ({ children }) => {
                     type: "LOGIN",
                     payload: { member_name: loginData.member_name },
                   },
-                  "https://eepc-exporter-home-page.vercel.app"
-                  // "https://eepc-exporter-home-page.vercel.app"
+                  "https://eepc-exporter-home-page-v2.vercel.app/"
+                  // "https://eepc-exporter-home-page-v2.vercel.app/"
                 );
               };
             } else {
@@ -185,8 +185,8 @@ export const AuthProvider = ({ children }) => {
                   type: "LOGIN",
                   payload: { member_name: loginData.member_name },
                 },
-                "https://eepc-exporter-home-page.vercel.app"
-                // "https://eepc-exporter-home-page.vercel.app"
+                "https://eepc-exporter-home-page-v2.vercel.app/"
+                // "https://eepc-exporter-home-page-v2.vercel.app/"
               );
             }
 
@@ -274,16 +274,16 @@ export const AuthProvider = ({ children }) => {
         console.log("📡 iframe loaded, sending login data...");
         iframe.contentWindow.postMessage(
           { type: "LOGOUT", payload: { member_name: undefined } },
-          // "https://eepc-exporter-home-page.vercel.app"
-          "https://eepc-exporter-home-page.vercel.app"
+          // "https://eepc-exporter-home-page-v2.vercel.app/"
+          "https://eepc-exporter-home-page-v2.vercel.app/"
         );
       };
     } else {
       // ✅ If iframe already exists, send directly
       iframe.contentWindow.postMessage(
         { type: "LOGOUT", payload: { member_name: undefined } },
-        // "https://eepc-exporter-home-page.vercel.app"
-        "https://eepc-exporter-home-page.vercel.app"
+        // "https://eepc-exporter-home-page-v2.vercel.app/"
+        "https://eepc-exporter-home-page-v2.vercel.app/"
       );
     }
 
