@@ -431,13 +431,13 @@ const ExportHomePage = () => {
         // }
         window.location.href =
           // `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
-          `https://eepc-exporter-home-page-v2.vercel.app/whhx.auth?token=${jtoken}`;
+          `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
         setSecondEdit(false);
       } else {
         window.location.href =
           // `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
 
-          `https://eepc-exporter-home-page-v2.vercel.app/whhx.auth?token=${jtoken}`;
+          `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
       }
     } else {
       toast.error("Something went wrong. Please try again.");
