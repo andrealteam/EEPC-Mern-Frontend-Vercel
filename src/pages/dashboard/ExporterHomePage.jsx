@@ -350,14 +350,24 @@ const ExportHomePage = () => {
               </button>
             )}
 
-            <button
-              className="btn btn-secondary"
-              onClick={() =>
-                (window.location.href = `https://eepc-exporter-home-page-v2.vercel.app/preview/${jtoken}`)
-              }
-            >
-              <FontAwesomeIcon icon={faEye} />
-            </button>
+            {jtoken ? (
+              <button
+                className="btn btn-secondary"
+                onClick={() =>
+                  (window.location.href = `https://eepc-exporter-home-page-v2.vercel.app/preview/${jtoken}`)
+                }
+              >
+                <FontAwesomeIcon icon={faEye} />
+              </button>
+            ) : (
+              <button
+                className="btn btn-secondary"
+                disabled
+                title="Preparing preview link..."
+              >
+                <FontAwesomeIcon icon={faEye} />
+              </button>
+            )}
 
             {is_final_publish === "true" && (
               <button
