@@ -618,7 +618,7 @@ const ExportHomePage = () => {
 
                 {status === "approved" && (
                   <h4 class="exp-date">
-                    Website Expires on : {exportData?.data?.expiry_date || ""}
+                    Website Expires ons : {exportData?.data?.expiry_date || ""}
                   </h4>
                 )}
               </div>
