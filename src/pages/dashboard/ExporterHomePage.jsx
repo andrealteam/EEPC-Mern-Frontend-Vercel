@@ -353,7 +353,7 @@ const ExportHomePage = () => {
             <button
               className="btn btn-secondary"
               onClick={() =>
-                (window.location.href = `https://eepc-exporter-home-page-v2.vercel.app/preview/${jtoken}`)
+                (window.location.href = `https://eepc-exporter-home-page-v2-whhx.vercel.app/preview/${jtoken}`)
               }
             >
               <FontAwesomeIcon icon={faEye} />
@@ -388,7 +388,7 @@ const ExportHomePage = () => {
       adminCompany: user?.loggedInUserName ? user?.loggedInUserName : "",
     };
     const newWindow = window.open(
-      `https://eepc-exporter-home-page-v2.vercel.app/${url}`,
+      `https://eepc-exporter-home-page-v2-whhx.vercel.app/${url}`,
       "_blank"
     );
     setTimeout(() => {
@@ -430,14 +430,14 @@ const ExportHomePage = () => {
 
         // }
         window.location.href =
-          // `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
-          `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
+          // `https://eepc-exporter-home-page-v2-whhx.vercel.app/auth?token=${jtoken}`;
+          `https://eepc-exporter-home-page-v2-whhx.vercel.app/auth?token=${jtoken}`;
         setSecondEdit(false);
       } else {
         window.location.href =
-          // `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
+          // `https://eepc-exporter-home-page-v2-whhx.vercel.app/auth?token=${jtoken}`;
 
-          `https://eepc-exporter-home-page-v2.vercel.app/auth?token=${jtoken}`;
+          `https://eepc-exporter-home-page-v2-whhx.vercel.app/auth?token=${jtoken}`;
       }
     } else {
       toast.error("Something went wrong. Please try again.");
@@ -458,7 +458,7 @@ const ExportHomePage = () => {
             </h1>
             <a
               // href="http://localhost:4000/"
-              href="https://eepc-exporter-home-page-v2.vercel.app/"
+              href="https://eepc-exporter-home-page-v2-whhx.vercel.app/"
               className="cta-button"
               style={{ backgroundColor: "#09367a" }}
             >
