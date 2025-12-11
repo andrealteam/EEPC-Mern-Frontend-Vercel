@@ -353,7 +353,7 @@ const ExportHomePage = () => {
             <button
               className="btn btn-secondary"
               onClick={() =>
-                (window.location.href = `http://localhost:3000/preview/${jtoken}`)
+                (window.location.href = `https://eepc-exporter-home-page.vercel.app/preview/${jtoken}`)
               }
             >
               <FontAwesomeIcon icon={faEye} />
@@ -388,7 +388,7 @@ const ExportHomePage = () => {
       adminCompany: user?.loggedInUserName ? user?.loggedInUserName : "",
     };
     const newWindow = window.open(
-      `http://localhost:3000/${url}`,
+      `https://eepc-exporter-home-page.vercel.app/${url}`,
       "_blank"
     );
     setTimeout(() => {
@@ -430,14 +430,14 @@ const ExportHomePage = () => {
 
         // }
         window.location.href =
-          // `http://localhost:3000/auth?token=${jtoken}`;
-          `http://localhost:3000/auth?token=${jtoken}`;
+          // `https://eepc-exporter-home-page.vercel.app/auth?token=${jtoken}`;
+          `https://eepc-exporter-home-page.vercel.app/auth?token=${jtoken}`;
         setSecondEdit(false);
       } else {
         window.location.href =
-          // `http://localhost:3000/auth?token=${jtoken}`;
+          // `https://eepc-exporter-home-page.vercel.app/auth?token=${jtoken}`;
 
-          `http://localhost:3000/auth?token=${jtoken}`;
+          `https://eepc-exporter-home-page.vercel.app/auth?token=${jtoken}`;
       }
     } else {
       toast.error("Something went wrong. Please try again.");
@@ -458,7 +458,7 @@ const ExportHomePage = () => {
             </h1>
             <a
               // href="http://localhost:4000/"
-              href="http://localhost:3000/"
+              href="https://eepc-exporter-home-page.vercel.app/"
               className="cta-button"
               style={{ backgroundColor: "#09367a" }}
             >

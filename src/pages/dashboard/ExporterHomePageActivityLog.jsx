@@ -32,7 +32,7 @@ const ExporterHomePageActivityLog = () => {
       `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`,
       {
         headers: {
-          "User-Agent": "http://localhost:3000/", // Replace with actual app name/domain
+          "User-Agent": "https://eepc-exporter-home-page.vercel.app/", // Replace with actual app name/domain
         },
       }
     );

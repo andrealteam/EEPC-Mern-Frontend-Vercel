@@ -44,7 +44,7 @@ const Notification = () => {
                 {/* Profile picture */}
                 <div className="profile-picture">
                   <img
-                    src="http://localhost:3000/src/assets/images/70_year_logo-r.png"
+                    src="https://eepc-exporter-home-page.vercel.app/src/assets/images/70_year_logo-r.png"
                     alt="EEPC"
                   />
                 </div>

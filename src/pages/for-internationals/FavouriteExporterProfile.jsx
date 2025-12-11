@@ -145,10 +145,10 @@ const FavouriteExporterProfile = () => {
     await postTrackHistory(visitData);
     console.log("visited data in submit", visitData);
     // window.open(
-    //   `http://localhost:3000/${visitData.url}`,
+    //   `https://eepc-exporter-home-page.vercel.app/${visitData.url}`,
     //   "_blank"
     // );
-    // window.open(`http://localhost:3000/${visitData.url}`, "_blank");
+    // window.open(`https://eepc-exporter-home-page.vercel.app/${visitData.url}`, "_blank");
 
     let Rdata = {
       name: modalName,
@@ -158,10 +158,10 @@ const FavouriteExporterProfile = () => {
     };
     console.log("Rdata", Rdata);
     // const query = new URLSearchParams(Rdata).toString();
-    // window.open(`http://localhost:3000/${visitData.url}?${query}`, "_blank");
+    // window.open(`https://eepc-exporter-home-page.vercel.app/${visitData.url}?${query}`, "_blank");
     const newWindow = window.open(
-      `http://localhost:3000/${visitData.url}`,
-      // `http://localhost:3000/${visitData.url}`,
+      `https://eepc-exporter-home-page.vercel.app/${visitData.url}`,
+      // `https://eepc-exporter-home-page.vercel.app/${visitData.url}`,
       "_blank"
     );
 
@@ -289,13 +289,13 @@ const FavouriteExporterProfile = () => {
       setVisitData(data); // still okay to update state if needed
       await postTrackHistory(data); // pass directly
       // window.open(
-      //   `http://localhost:3000/${data.url}`,
+      //   `https://eepc-exporter-home-page.vercel.app/${data.url}`,
       //   "_blank"
       // );
-      // window.open(`http://localhost:3000/${visitData.url}?${query}`, "_blank");
+      // window.open(`https://eepc-exporter-home-page.vercel.app/${visitData.url}?${query}`, "_blank");
 
       const newWindow = window.open(
-        `http://localhost:3000/${data.url}`,
+        `https://eepc-exporter-home-page.vercel.app/${data.url}`,
         "_blank"
       );
 

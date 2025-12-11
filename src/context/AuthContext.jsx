@@ -161,8 +161,8 @@ export const AuthProvider = ({ children }) => {
             if (!iframe) {
               iframe = document.createElement("iframe");
               iframe.id = "syncFrame";
-              iframe.src = "http://localhost:3000/receiver.html";
-              // "http://localhost:3000/receiver.html";
+              iframe.src = "https://eepc-exporter-home-page.vercel.app/receiver.html";
+              // "https://eepc-exporter-home-page.vercel.app/receiver.html";
               iframe.style.display = "none";
               document.body.appendChild(iframe);
 
@@ -264,8 +264,8 @@ export const AuthProvider = ({ children }) => {
       iframe = document.createElement("iframe");
       iframe.id = "syncFrame";
       iframe.src =
-        // "http://localhost:3000/receiver.html";
-        "http://localhost:3000/receiver.html";
+        // "https://eepc-exporter-home-page.vercel.app/receiver.html";
+        "https://eepc-exporter-home-page.vercel.app/receiver.html";
       iframe.style.display = "none";
       document.body.appendChild(iframe);
 
