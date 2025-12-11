@@ -145,10 +145,10 @@ const FavouriteExporterProfile = () => {
     await postTrackHistory(visitData);
     console.log("visited data in submit", visitData);
     // window.open(
-    //   `https://eepc-exporter-home-page.vercel.app/${visitData.url}`,
+    //   `https://eepc-exporter-home-page-v2.vercel.app/${visitData.url}`,
     //   "_blank"
     // );
-    // window.open(`https://eepc-exporter-home-page.vercel.app/${visitData.url}`, "_blank");
+    // window.open(`https://eepc-exporter-home-page-v2.vercel.app/${visitData.url}`, "_blank");
 
     let Rdata = {
       name: modalName,
@@ -158,10 +158,10 @@ const FavouriteExporterProfile = () => {
     };
     console.log("Rdata", Rdata);
     // const query = new URLSearchParams(Rdata).toString();
-    // window.open(`https://eepc-exporter-home-page.vercel.app/${visitData.url}?${query}`, "_blank");
+    // window.open(`https://eepc-exporter-home-page-v2.vercel.app/${visitData.url}?${query}`, "_blank");
     const newWindow = window.open(
-      `https://eepc-exporter-home-page.vercel.app/${visitData.url}`,
-      // `https://eepc-exporter-home-page.vercel.app/${visitData.url}`,
+      `https://eepc-exporter-home-page-v2.vercel.app/${visitData.url}`,
+      // `https://eepc-exporter-home-page-v2.vercel.app/${visitData.url}`,
       "_blank"
     );
 
@@ -289,13 +289,13 @@ const FavouriteExporterProfile = () => {
       setVisitData(data); // still okay to update state if needed
       await postTrackHistory(data); // pass directly
       // window.open(
-      //   `https://eepc-exporter-home-page.vercel.app/${data.url}`,
+      //   `https://eepc-exporter-home-page-v2.vercel.app/${data.url}`,
       //   "_blank"
       // );
-      // window.open(`https://eepc-exporter-home-page.vercel.app/${visitData.url}?${query}`, "_blank");
+      // window.open(`https://eepc-exporter-home-page-v2.vercel.app/${visitData.url}?${query}`, "_blank");
 
       const newWindow = window.open(
-        `https://eepc-exporter-home-page.vercel.app/${data.url}`,
+        `https://eepc-exporter-home-page-v2.vercel.app/${data.url}`,
         "_blank"
       );
 
