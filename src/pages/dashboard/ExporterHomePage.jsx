@@ -394,7 +394,7 @@ const ExportHomePage = () => {
     setTimeout(() => {
       newWindow.postMessage(
         { isAdmin, Rdata },
-        `https://eepc-exporter-home-page-v2.vercel.app/`
+        `https://eepc-exporter-home-page-v2.vercel.app`
       );
     }, 1000); // 1s delay, taaki dusri window load ho jaye
   }
