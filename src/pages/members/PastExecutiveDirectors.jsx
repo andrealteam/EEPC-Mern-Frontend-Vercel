@@ -1,15 +1,17 @@
 import React from "react";
 
 // Import images
-import p1 from "../../assets/images/p1.png";
-import p2 from "../../assets/images/p2.png";
-import p3 from "../../assets/images/p3.png";
-import p4 from "../../assets/images/p4.png";
-import p5 from "../../assets/images/p5.png";
-import p6 from "../../assets/images/p6.png";
-import p7 from "../../assets/images/p7.png";
-import p8 from "../../assets/images/p8.png";
-import p9 from "../../assets/images/p9.png";
+// Note: Using P2.png to P9.png as they exist in the assets folder
+// p1.png doesn't exist, so we'll use P2.png as a placeholder for the first entry
+import p1 from "../../assets/images/P2.png";
+import p2 from "../../assets/images/P2.png";
+import p3 from "../../assets/images/P3.png";
+import p4 from "../../assets/images/P4.png";
+import p5 from "../../assets/images/P5.png";
+import p6 from "../../assets/images/P6.png";
+import p7 from "../../assets/images/P7.png";
+import p8 from "../../assets/images/P8.png";
+import p9 from "../../assets/images/P9.png";
 
 const PastExecutiveDirectors = () => {
   return (
@@ -25,8 +27,8 @@ const PastExecutiveDirectors = () => {
           <tr style={{ backgroundColor: "#f2f2f2", fontWeight: "bold" }}>
             <th style={cellStyle}>Sr. No.</th>
             <th style={cellStyle}>Year</th>
-            <th style={cellStyle}>Image</th>
             <th style={cellStyle}>Past Secretariat Head</th>
+            <th style={cellStyle}>Image</th>
           </tr>
         </thead>
         <tbody>
@@ -66,6 +68,7 @@ const TableRow = ({ index, year, name, image }) => {
     <tr style={{ backgroundColor: isEven ? "#f9f9f9" : "#ffffff" }}>
       <td style={cellStyle}>{index}</td>
       <td style={cellStyle}>{year}</td>
+      <td style={cellStyle}>{name}</td>
       <td style={{ ...cellStyle, textAlign: 'center' }}>
         {image && <img 
           src={image} 
@@ -79,7 +82,6 @@ const TableRow = ({ index, year, name, image }) => {
           }} 
         />}
       </td>
-      <td style={cellStyle}>{name}</td>
     </tr>
   );
 };
