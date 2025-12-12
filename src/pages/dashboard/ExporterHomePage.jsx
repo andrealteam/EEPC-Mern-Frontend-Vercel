@@ -665,21 +665,22 @@ const ExportHomePage = () => {
                         After Click Confirm this will go again for approval. so
                         do you want to confirm?
                       </h4>
-                      <button
-                        type="button"
-                        className="btn btn-secondary mx-2"
-                        onClick={EditHandle}
-                      >
-                        Confirm
-                      </button>
-                      <button
-                        type="button"
-                        className="btn btn-primary mx-2"
-                        onClick={() => setSecondEdit(false)}
-                      >
-                        Cancel
-                      </button>
-                    </div>
+                      <div className="d-flex flex-wrap justify-content-center gap-2">
+                        <button
+                          type="button"
+                          className="btn btn-secondary mx-1 mx-md-2 mb-2 mb-md-0"
+                          onClick={EditHandle}
+                        >
+                          Confirm
+                        </button>
+                        <button
+                          type="button"
+                          className="btn btn-primary mx-1 mx-md-2 mb-2 mb-md-0"
+                          onClick={() => setSecondEdit(false)}
+                        >
+                          Cancel
+                        </button>
+                      </div>
                   </div>
                 </div>
               </div>
