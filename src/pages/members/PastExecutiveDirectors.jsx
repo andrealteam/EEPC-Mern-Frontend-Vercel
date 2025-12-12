@@ -1,17 +1,26 @@
 import React from "react";
 
-// Import images
-// Note: Using P2.png to P9.png as they exist in the assets folder
-// p1.png doesn't exist, so we'll use P2.png as a placeholder for the first entry
-import p1 from "../../assets/images/P2.png";
-import p2 from "../../assets/images/P2.png";
-import p3 from "../../assets/images/P3.png";
-import p4 from "../../assets/images/P4.png";
-import p5 from "../../assets/images/P5.png";
-import p6 from "../../assets/images/P6.png";
-import p7 from "../../assets/images/P7.png";
-import p8 from "../../assets/images/P8.png";
-import p9 from "../../assets/images/P9.png";
+// Import images in the correct order as per the mapping
+// 1. Dr. R.D. Vidyarthi - p1
+// 2. Late Dr. R.K. Singh - p2
+// 3. Late V Kumar - p3
+// 4. Late G Chandra - p4
+// 5. Late C.S. Shukla - p5
+// 6. Mr. R Maitra - p6
+// 7. Mr. Bhaskar Sarkar - p7
+// 8. Mr. Suranjan Gupta - p8
+// 9. Mr. Adhip Mitra - p9
+
+// Note: Using P2.png for Dr. R.D. Vidyarthi as P1.png doesn't exist
+import p1 from "../../assets/images/P1.png";  // Dr. R.D. Vidyarthi 
+import p2 from "../../assets/images/P2.png";  // Late Dr. R.K. Singh
+import p3 from "../../assets/images/P3.png";  // Late V Kumar
+import p4 from "../../assets/images/P4.png";  // Late G Chandra
+import p5 from "../../assets/images/P5.png";  // Late C.S. Shukla
+import p6 from "../../assets/images/P6.png";  // Mr. R Maitra
+import p7 from "../../assets/images/P7.png";  // Mr. Bhaskar Sarkar
+import p8 from "../../assets/images/P8.png";  // Mr. Suranjan Gupta
+import p9 from "../../assets/images/P9.png";  // Mr. Adhip Mitra
 
 const PastExecutiveDirectors = () => {
   return (
